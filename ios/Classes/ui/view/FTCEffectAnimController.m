@@ -110,6 +110,9 @@
     [self.tceAnimView setRate:rate];
 }
 
+- (nullable NSString *)getSdkVersionWithError:(FlutterError * _Nullable __autoreleasing * _Nonnull)error { 
+    return [TCEffectAnimView getSdkVersion];
+}
 
 #pragma mark - TCEPAnimViewDelegate
 

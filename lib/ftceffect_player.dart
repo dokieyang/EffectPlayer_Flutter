@@ -15,3 +15,4 @@ part 'player/view/ftceffect_anim_view.dart';
 part 'player/ftceffect_view_controller.dart';
 part 'player/ftceffect_config.dart';
 part 'common/ftceffect_mediax_extension.dart';
+part 'util/log_utils.dart';

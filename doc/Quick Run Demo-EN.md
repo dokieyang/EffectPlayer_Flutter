@@ -2,7 +2,7 @@
 
 ## Environment Preparation
 
-- Only supports Flutter 3.16.9 and below.
+- Supports Flutter 3.16.0 and above.
 
 - Android development:
   - Android Studio 2.0 or above.

@@ -126,6 +126,8 @@ abstract class FTCEffectAnimViewApi {
   void onDestroy();
 
   void setRate(double rate);
+
+  String getSdkVersion();
 }
 
 @FlutterApi()

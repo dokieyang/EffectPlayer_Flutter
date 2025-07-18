@@ -1048,6 +1048,9 @@ public class TCEffectMessages {
 
     void setRate(@NonNull Double rate);
 
+    @NonNull 
+    String getSdkVersion();
+
     /** The codec used by FTCEffectAnimViewApi. */
     static @NonNull MessageCodec<Object> getCodec() {
       return PigeonCodec.INSTANCE;
@@ -1473,6 +1476,27 @@ public class TCEffectMessages {
                 try {
                   api.setRate(rateArg);
                   wrapped.add(0, null);
+                }
+ catch (Throwable exception) {
+                  wrapped = wrapError(exception);
+                }
+                reply.reply(wrapped);
+              });
+        } else {
+          channel.setMessageHandler(null);
+        }
+      }
+      {
+        BasicMessageChannel<Object> channel =
+            new BasicMessageChannel<>(
+                binaryMessenger, "dev.flutter.pigeon.flutter_effect_player.FTCEffectAnimViewApi.getSdkVersion" + messageChannelSuffix, getCodec());
+        if (api != null) {
+          channel.setMessageHandler(
+              (message, reply) -> {
+                ArrayList<Object> wrapped = new ArrayList<>();
+                try {
+                  String output = api.getSdkVersion();
+                  wrapped.add(0, output);
                 }
  catch (Throwable exception) {
                   wrapped = wrapError(exception);

@@ -44,6 +44,10 @@ public class FTCEffectAnimController implements TCEffectMessages.FTCEffectAnimVi
         mEffectView.setPlayListener(new FEffectAnimPlayListenerImpl(mEffectViewEvent));
     }
 
+    public int getViewId() {
+        return mViewId;
+    }
+
     @NonNull
     @Override
     public Long startPlay(@NonNull String playUrl) {
@@ -158,6 +162,12 @@ public class FTCEffectAnimController implements TCEffectMessages.FTCEffectAnimVi
     @Override
     public void setRate(@NonNull Double rate) {
         mEffectView.getTCEffectPlayer().setRate(rate.floatValue());
+    }
+
+    @NonNull
+    @Override
+    public String getSdkVersion() {
+        return TCEffectAnimView.getSdkVersion();
     }
 
     public TCEffectAnimView getEffectView() {
