@@ -1,6 +1,6 @@
 # Gift AR Flutter
 
-Gift AR Flutter plugin project.
+English | [简体中文](./README_CN.md)
 
 ## OverView
 
@@ -13,9 +13,31 @@ Gift AR provides clients with efficient and smooth animation effects playback so
 | High device compatibility            | Deeply optimized playback performance, compatible with mid-to-low end devices, ensuring smooth user experience across various hardware configurations. |
 | High security                        | Encrypt special effect resources to prevent piracy and tampering, ensuring customer content and asset security. |
 
+## Directory Structure
+
+This directory contains the demo source code of the Gift AR SDK for Android, which shows you how to call the APIs to implement basic features.
+
+```
+├── android                        // The android source code for plugin.
+├── ios                            // The iOS source code for plugin.
+├── lib                            // The dart source code for plugin.
+└── example                        // The demo source code
+    ├── android                    // The android demo source code
+    ├── ios                        // The ios demo source code
+    └── lib                        // The dart demo source code
+```
+
 ## Related Documents
 
-- [Quick Run Demo](./doc/Quick%20Run%20Demo-EN.md)
-- [Integration Guide](./doc/Integration%20Guide_EN.md)
-- [User Documentation](./doc/User%20Documentation-EN.md)
-- [API Documentation](./doc/API%20Documentation-EN.md)
+- [Quick Run Demo](https://trtc.io/document/73974?product=beautyar&menulabel=core%20sdk&platform=flutter)
+- [Integration Guide](https://trtc.io/document/73975?product=beautyar&menulabel=core%20sdk&platform=flutter)
+- [User Documentation](https://trtc.io/document/73976?product=beautyar&menulabel=core%20sdk&platform=flutter)
+- [API Documentation](https://trtc.io/document/73977?product=beautyar&menulabel=core%20sdk&platform=flutter)
+
+## Contact Us
+
+- Communication & Feedback
+  Welcome to join our Telegram Group to communicate with our professional engineers! We are more than happy to hear from you~ Click to join: https://t.me/+EPk6TMZEZMM5OGY1
+  Or scan the QR code
+
+  ![img](https://qcloudimg.tencent-cloud.cn/raw/79cbfd13877704ff6e17f30de09002dd.jpg)
